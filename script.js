@@ -5,10 +5,11 @@ const radius = document.getElementById('radius');
 const volume = document.getElementById('volume');
 	 const r = Number(radius.value);
     if(r<=0 || isNaN(r)) {
-       volume.value ="please enter the valid value";
+       volume.value ="NaN";
        return;
     }
-   volume.value =  (4/3)*Math.PI*Math.pow(r,3);
+   v  =  (4/3)*Math.PI*Math.pow(r,3);
+	volume.value = v.toFixed(4);
   
 } 
 
